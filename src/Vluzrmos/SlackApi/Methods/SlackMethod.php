@@ -3,7 +3,7 @@
 namespace Vluzrmos\SlackApi\Methods;
 
 use Vluzrmos\SlackApi\Contracts\SlackApi;
-use Illuminate\Contracts\Cache\Repository as Cache;
+use Illuminate\Cache\Repository as Cache;
 
 abstract class SlackMethod
 {
