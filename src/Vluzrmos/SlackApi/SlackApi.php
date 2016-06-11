@@ -3,7 +3,7 @@
 namespace Vluzrmos\SlackApi;
 
 use GuzzleHttp\Client;
-use Illuminate\Support\Traits\Macroable;
+use Illuminate\Support\Traits\MacroableTrait as Macroable;
 use Vluzrmos\SlackApi\Contracts\SlackApi as Contract;
 
 class SlackApi implements Contract
