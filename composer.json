@@ -1,5 +1,5 @@
 {
-    "name": "vluzrmos/slack-api",
+    "name": "soapbox/slack-api",
     "description": "Wrapper for Slack.com WEB API.",
     "license": "DBAD",
     "keywords":["Laravel", "Lumen", "Slack"],
@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "~5.0",
-        "illuminate/cache": "~5.0",
+        "illuminate/support": "~4.2",
+        "illuminate/cache": "~4.2",
         "guzzlehttp/guzzle":"~5.3|~6.0"
     },  
     "autoload": {
