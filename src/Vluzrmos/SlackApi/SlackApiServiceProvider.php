@@ -2,6 +2,7 @@
 
 namespace Vluzrmos\SlackApi;
 
+use Config;
 use Illuminate\Support\ServiceProvider;
 
 class SlackApiServiceProvider extends ServiceProvider
@@ -54,13 +55,8 @@ class SlackApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        /* Lumen autoload services configs */
-        if (str_contains($this->app->version(), 'Lumen')) {
-            $this->app->configure('services');
-        }
-
         $this->app->singleton('Vluzrmos\SlackApi\Contracts\SlackApi', function () {
-            $api = new SlackApi(null, config('services.slack.token'));
+            $api = new SlackApi(null, Config::get('services.slack.token'));
 
             return $api;
         });
